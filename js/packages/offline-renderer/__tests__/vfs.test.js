@@ -1,5 +1,5 @@
-import OfflineRenderer from '../index';
 import { el } from '@elemaudio/core';
+import OfflineRenderer from '../index';
 
 
 test('vfs sample', async function() {
@@ -9,7 +9,7 @@ test('vfs sample', async function() {
     numInputChannels: 1,
     numOutputChannels: 1,
     virtualFileSystem: {
-      '/v/increment': Float32Array.from([1, 2, 3, 4, 5]),
+      '/v/increment': Float32Array.from([1, 2, 3, 4]),
     },
   });
 

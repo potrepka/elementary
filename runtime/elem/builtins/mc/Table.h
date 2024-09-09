@@ -70,7 +70,7 @@ namespace elem
 
                 for (size_t i = 0; i < numSamples; ++i)
                 {
-                    auto const readPos = std::clamp(inputData[i], FloatType(0), FloatType(1)) * FloatType(bufferSize - 1);
+                    auto const readPos = std::clamp(inputData[i], FloatType(0), FloatType(1)) * FloatType(bufferSize);
                     auto const readLeft = static_cast<size_t>(readPos);
                     auto const readRight = readLeft + 1;
                     auto const frac = readPos - std::floor(readPos);
